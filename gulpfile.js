@@ -25,9 +25,6 @@ function concatJS() {
     return gulp.src(paths.src.js)
         .pipe(concat('bundle.js')) // Concatenate files into bundle.js
         .pipe(uglify())
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest(paths.dest.js)); // Output to dest/js folder
 }

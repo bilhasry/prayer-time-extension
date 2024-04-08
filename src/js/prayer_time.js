@@ -1,5 +1,6 @@
 "use strict";
 
+import { GREGORIAN_MONTHS, HIJRI_MONTHS } from "../../include/js/const/date.js";
 const PRAYER_TIMES = [
     'syuruk',
     'dhuhr',
@@ -7,36 +8,6 @@ const PRAYER_TIMES = [
     'maghrib',
     'isha',
     'fajr',
-];
-
-const HIJRI_MONTHS = [
-    'Muharram',
-    'Safar',
-    'Rabiul Awal',
-    'Rabiul Akhir',
-    'Jumadil Awal',
-    'Jumadil Akhir',
-    'Rajab',
-    'Sya\'ban',
-    'Ramadhan',
-    'Syawal',
-    'Dzulqoidah',
-    'Dzulhijjah'
-];
-
-const GREGORIAN_MONTHS = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
 ];
 
 const PRAYER_TIMES_TRANSLATE = {
@@ -47,8 +18,6 @@ const PRAYER_TIMES_TRANSLATE = {
     'fajr': 'Shubuh',
     'syuruk': 'Syuruk'
 };
-let nextPrayerTime = null;
-let prayerTimes = document.getElementById('prayer-times');
 
 let prayerCardClass = 'flex gap-5 px-5 py-2 mt-2 w-full bg-white rounded-lg border border-solid shadow-sm border-zinc-100';
 
