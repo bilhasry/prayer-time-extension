@@ -10,7 +10,7 @@ const PRAYER_TIMES = [
 ];
 
 const HIJRI_MONTHS = [
-    'Muharam',
+    'Muharram',
     'Safar',
     'Rabiul Awal',
     'Rabiul Akhir',
@@ -69,7 +69,8 @@ async function getPrayerTime() {
 
 function formatHijriDate(date) {
     let hijri = date.split('-');
-    return `${hijri[2]} ${HIJRI_MONTHS[parseInt(hijri[1])]} ${hijri[0]}`; 
+    console.log(date);
+    return `${hijri[2]} ${HIJRI_MONTHS[parseInt(hijri[1])-1]} ${hijri[0]}`; 
 }
 
 function formatGregorianDate(date) {
