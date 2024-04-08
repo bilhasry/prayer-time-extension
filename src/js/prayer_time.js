@@ -19,18 +19,6 @@ const PRAYER_TIMES_TRANSLATE = {
     'syuruk': 'Syuruk'
 };
 
-let prayerCardClass = 'flex gap-5 px-5 py-2 mt-2 w-full bg-white rounded-lg border border-solid shadow-sm border-zinc-100';
-
-let prayerCardTemplate = (prayer, time) => { return `<div class="${prayerCardClass}">
-            <div class="flex gap-5">
-            <div class="my-auto">${prayer}</div>
-            </div>
-            <div class="flex gap-5 justify-between my-auto">
-            <div class="my-auto">${time}</div>
-            </div>
-        </div>`;
-    };
-
 async function getPrayerTime() {
     const response = await fetch("https://www.e-solat.gov.my/index.php?r=esolatApi/TakwimSolat&period=today&zone=WLY01");
     return await response.json();
@@ -63,8 +51,5 @@ window.onload = function() {
                 document.querySelector('.hijri').innerHTML = formatHijriDate(value);
             }
         }
-    })
-    
+    })   
 }
-
-
