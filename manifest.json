@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Prayer ",
+    "version": "0.0.1",
+    "description": "A simple Chrome extension with a popup",
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "icons": {
+        "16": "img/logo/logo-16.png",
+        "48": "img/logo/logo-48.png",
+        "128": "img/logo/logo-128.png"
+    }
+  }

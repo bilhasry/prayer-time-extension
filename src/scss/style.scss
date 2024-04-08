@@ -1,0 +1,95 @@
+
+@import  './fonts';
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #333;
+    padding: 2rem;
+}
+.header {
+    display: inline-flex;
+    height: 117px;
+    margin-bottom: 2rem;
+    align-items: center;
+    flex-direction: row;
+    img {
+        margin-right: 1rem;
+    }
+    h1 {
+        color: #fff;
+        font-size: 3rem;
+        line-height: 48px;
+        margin:0;
+    }
+}
+.date, .current-time {
+    width: 300px;
+    height: 40px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    img {
+        margin-right: 1rem;
+    }
+}
+
+.date-today {
+    * {
+        color: #fff;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        margin: 0px;
+    }
+}
+
+.time-info {
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    margin: 0;
+    color: #fff;
+}
+.card {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    &--transparent-55 {
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+    &--transparent-35 {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+}
+
+.prayer-time-list {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto;
+    gap: 1rem;
+    margin-top: 7rem;
+    .prayer-time-item {
+        width: 160px;
+        padding: 1rem;
+    }
+}
+
+.prayer-time-item {
+    flex-direction: column;
+    align-items: center;
+    * {
+        color: #fff;
+    }
+    h3 {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    div {
+        font-size: 2rem;
+    }
+}
