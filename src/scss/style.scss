@@ -78,6 +78,30 @@ body {
     }
 }
 
+.today-ayat {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 32px;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    * {
+        color:#fff;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .ayat {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
 .prayer-time-item {
     flex-direction: column;
     align-items: center;
